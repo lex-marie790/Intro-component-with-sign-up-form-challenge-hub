@@ -1,0 +1,7 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color: $backgroundColor;
+}
