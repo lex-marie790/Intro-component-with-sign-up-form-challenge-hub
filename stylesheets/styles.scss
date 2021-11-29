@@ -14,11 +14,10 @@ body {
 }
 
 header {
-    font-weight: 400;
+    font-weight: $fontWeight1;
     margin-top: 5.8rem;
     margin-bottom: 3rem;
-    margin-left: 6%;
-    margin-right: 6%; 
+    @include equalMargins; 
 
     @media (min-width: $layout-desktop) {
         display: flex;
@@ -33,7 +32,7 @@ header {
 
 .left {
     margin-bottom: 4rem;
-    font-weight: 500;
+    font-weight: font-weight2;
 
     @media (min-width: $layout-desktop) {
         text-align: left;
@@ -55,10 +54,8 @@ header {
     }
 }
 
-
 .right {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
 }
 
 .promoBox {
@@ -66,7 +63,7 @@ header {
     border-radius: .5em;
     margin-bottom: 2rem;
     height: 5.7rem;
-    box-shadow: 0 3px 10px $formTextColor;
+    box-shadow: $shadows;
 
     @media (min-width: $layout-desktop) {
         height: auto;
@@ -74,8 +71,7 @@ header {
     }
 
     p {
-        margin-right: 4rem;
-        margin-left: 4rem;
+        @include promoEqualMargins;
         margin-top: 1.7rem;
         line-height: normal;
 
@@ -85,22 +81,21 @@ header {
     }
 
     #button {
-        font-weight: 600;
+        font-weight: font-weight3;
     }
 }
 
 .formBox{
     background-color: $fontColor;
     border-radius: 1rem;
-    box-shadow: 0 3px 10px $formTextColor;
+    box-shadow: $shadows;
 
     @media (min-width: $layout-desktop) {
         width: 33.5rem;
     }
 
     form {
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         border-radius: .5rem;
         margin: 3% 3% 0 3%;
 
@@ -133,7 +128,7 @@ header {
             margin: 5% 5%;
             text-transform: uppercase;
             box-shadow: 0 5px 3px -3px $buttonColor;
-            font-weight: 600;
+            font-weight: font-weight3;
 
             @media (min-width: $layout-desktop) {
                 font-size: 1.2rem;

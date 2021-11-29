@@ -37,7 +37,7 @@ header {
 
 .left {
   margin-bottom: 4rem;
-  font-weight: 500;
+  font-weight: font-weight2;
 }
 
 @media (min-width: 1440px) {
@@ -103,7 +103,7 @@ header {
 }
 
 .promoBox #button {
-  font-weight: 600;
+  font-weight: font-weight3;
 }
 
 .formBox {
@@ -164,7 +164,7 @@ header {
   text-transform: uppercase;
   -webkit-box-shadow: 0 5px 3px -3px #38cc8c;
           box-shadow: 0 5px 3px -3px #38cc8c;
-  font-weight: 600;
+  font-weight: font-weight3;
 }
 
 @media (min-width: 1440px) {

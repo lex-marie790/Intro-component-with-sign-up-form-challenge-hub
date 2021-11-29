@@ -1,0 +1,14 @@
+@mixin equalMargins {
+    margin-left: 6%;
+    margin-right: 6%; 
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin promoEqualMargins {
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
