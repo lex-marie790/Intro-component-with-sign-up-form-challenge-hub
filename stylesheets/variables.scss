@@ -4,11 +4,13 @@ $fontWeight1: 400;
 $fontWeight2: 500;
 $fontWeight3: 600;
 $fontWeight4: 700;
+$fontColor: white;
 
 $backgroundColor: hsl(0, 100%, 74%);
 $buttonColor: hsl(154, 59%, 51%);
 $promoBoxColor: hsl(248, 32%, 49%);
-$formColor: hsl(246, 25%, 77%);
-$activeFormColor: hsl(249, 10%, 26%);
+$termsColor: hsl(246, 25%, 77%);
+$formTextColor: hsl(249, 10%, 26%);
 
 $layout-mobile: 375px;
+$layout-desktop: 1440px;

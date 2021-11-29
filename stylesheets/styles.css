@@ -1,5 +1,123 @@
 body {
   background-image: url(../images/bg-intro-desktop.png);
   background-color: #ff7a7a;
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+header {
+  line-height: 2rem;
+  font-weight: 400;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+@media (min-width: 1440px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.left {
+  margin-bottom: inherit;
+  font-weight: 500;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.promoBox {
+  background-color: #6055a5;
+  border-radius: .5em;
+  margin-bottom: 2rem;
+  height: 6rem;
+  -webkit-box-shadow: 0 3px 10px #3e3c49;
+          box-shadow: 0 3px 10px #3e3c49;
+}
+
+.promoBox p {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 1.7rem;
+  line-height: normal;
+}
+
+.promoBox #button {
+  font-weight: 600;
+}
+
+.formBox {
+  background-color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 3px 10px #3e3c49;
+          box-shadow: 0 3px 10px #3e3c49;
+}
+
+.formBox form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: .5rem;
+  margin: 3% 3% 0 3%;
+}
+
+.formBox input {
+  border: 1px solid #b9b6d3;
+  padding: 1rem;
+  border-radius: inherit;
+  margin: 4% 5%;
+  color: #3e3c49;
+  font-weight: 600;
+}
+
+.formBox button {
+  background-color: #38cc8c;
+  color: white;
+  border-radius: inherit;
+  border: none;
+  padding: 1rem;
+  margin: 5% 5%;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 5px 3px -3px #38cc8c;
+          box-shadow: 0 5px 3px -3px #38cc8c;
+  font-weight: 600;
+}
+
+.formBox p {
+  color: #b9b6d3;
+  text-align: center;
+  font-size: smaller;
+  margin-top: 0%;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.formBox #terms {
+  color: #ff7a7a;
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */

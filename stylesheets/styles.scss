@@ -4,4 +4,110 @@
 body {
     background-image: url(../images/bg-intro-desktop.png);
     background-color: $backgroundColor;
+    color: $fontColor;
+    text-align: center;
+    font-family: $fontFamily;
 }
+
+h1 {
+    font-weight: $fontWeight3;
+}
+
+header {
+    line-height: 2rem;
+    font-weight: 400;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    margin-left: 6%;
+    margin-right: 6%; 
+
+    @media (min-width: $layout-desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }    
+    
+}
+
+.left {
+    margin-bottom: inherit;
+    font-weight: 500;
+
+    // p {
+    //     font-weight: 500;
+    // }
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.promoBox {
+    background-color: $promoBoxColor;
+    border-radius: .5em;
+    margin-bottom: 2rem;
+    height: 6rem;
+    box-shadow: 0 3px 10px $formTextColor;
+
+    p {
+        margin-right: 4rem;
+        margin-left: 4rem;
+        margin-top: 1.7rem;
+        line-height: normal;
+    }
+
+    #button {
+        font-weight: 600;
+    }
+}
+
+.formBox{
+    background-color: $fontColor;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px $formTextColor;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        border-radius: .5rem;
+        margin: 3% 3% 0 3%;
+    }
+
+        input {
+            border: 1px solid $termsColor;
+            padding: 1rem;
+            border-radius: inherit;
+            margin: 4% 5%;
+            color: $formTextColor;
+            font-weight: $fontWeight3;
+        }
+        
+        button {
+            background-color: $buttonColor;
+            color: $fontColor;
+            border-radius: inherit;
+            border: none;
+            padding: 1rem;
+            margin: 5% 5%;
+            text-transform: uppercase;
+            box-shadow: 0 5px 3px -3px $buttonColor;
+            font-weight: 600;
+        }
+
+    p {
+        color: $termsColor;
+        text-align: center;
+        font-size: smaller;
+        margin-top: 0%;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    #terms {
+        color: $backgroundColor;
+        font-weight: bold;
+    }
+}
+
+
