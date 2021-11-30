@@ -67,7 +67,7 @@ header {
 
     @media (min-width: $layout-desktop) {
         height: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     p {
@@ -100,7 +100,35 @@ header {
         margin: 3% 3% 0 3%;
 
         @media (min-width: $layout-desktop) {
-            margin: 8% 3% 0 3%;
+            margin: 2.7% 5% 1%;
+        }
+
+        #signUp {
+            margin-top:2%;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+
+            .error {
+                margin-top: -2%;
+            }
+        }
+
+        .field.error input {
+            border: 1px solid red;
+        }
+
+        .field.success input {
+            border: 1px solid green;
+        }
+        
+        .field small {
+            color: red;
+            text-align: right;
+            margin-right: 4%;
+            margin-bottom: 1%;
         }
     }
 
@@ -114,12 +142,12 @@ header {
             font-size: 1rem;
 
             @media (min-width: $layout-desktop) {
-                margin: 2% 5%;
+                margin: 2.7% 5% 2%;
                 font-size: 1rem;
             }
         }
         
-        button {
+        #submit {
             background-color: $buttonColor;
             color: $fontColor;
             border-radius: inherit;
@@ -133,6 +161,7 @@ header {
             @media (min-width: $layout-desktop) {
                 font-size: 1.2rem;
                 margin-bottom: 1rem;
+                margin-top: 3%;
             }
         }
 

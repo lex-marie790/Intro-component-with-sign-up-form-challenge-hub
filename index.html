@@ -51,36 +51,55 @@
 				</div>
 
 				<div class="formBox">
-					<form>
-						<label for="firstName"></label>
-						<input
-							type="text"
-							id="firstName"
-							name="firstName"
-							placeholder="First Name"
-						/>
-						<label for="lastName"></label>
-						<input
-							type="text"
-							id="lastName"
-							name="lastName"
-							placeholder="Last Name"
-						/>
-						<label for="Email"></label>
-						<input
-							type="email"
-							id="Email"
-							name="Email"
-							placeholder="Email Address"
-						/>
-						<label for="password"></label>
-						<input
-							type="password"
-							id="password"
-							name="password"
-							placeholder="Password"
-						/>
-						<button>Claim your free trial</button>
+					<form  id='signUp' name='signUp' >
+						<div class='field'>
+							<label for="firstName"></label>
+							<input
+								type="text"
+								id="firstName"
+								name="firstName"
+								placeholder="First Name"
+							/>
+							<small></small>
+						</div>
+						
+						<div class='field'>
+							<label for="lastName"></label>
+							<input
+								type="text"
+								id="lastName"
+								name="lastName"
+								placeholder="Last Name"
+							/>
+							<small></small>
+						</div>
+						
+						<div class='field'>
+							<label for="email"></label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Email Address"
+							/>
+							<small></small>
+						</div>
+						
+						<div class='field'>
+							<label for="password"></label>
+							<input
+								type="password"
+								id="password"
+								name="password"
+								placeholder="Password"
+							/>
+							<small></small>
+						</div>
+						
+						<div class='field'>
+							<input id='submit' type='submit' value='Claim your free trial'></i>
+						</div>
+						
 					</form>
 					<p>
 						By clicking the button, you are agreeing to our <span id='terms'>Terms and Services</span>
@@ -97,5 +116,6 @@
 				>. Coded by <a href="#">Lexi Marie</a>.
 			</p>
 		</footer>
+		<script src = "scripts.js"></script>
 	</body>
 </html>

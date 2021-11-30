@@ -85,7 +85,7 @@ header {
 @media (min-width: 1440px) {
   .promoBox {
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -133,8 +133,41 @@ header {
 
 @media (min-width: 1440px) {
   .formBox form {
-    margin: 8% 3% 0 3%;
+    margin: 2.7% 5% 1%;
   }
+}
+
+.formBox form #signUp {
+  margin-top: 2%;
+}
+
+.formBox form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formBox form .field .error {
+  margin-top: -2%;
+}
+
+.formBox form .field.error input {
+  border: 1px solid red;
+}
+
+.formBox form .field.success input {
+  border: 1px solid green;
+}
+
+.formBox form .field small {
+  color: red;
+  text-align: right;
+  margin-right: 4%;
+  margin-bottom: 1%;
 }
 
 .formBox input {
@@ -149,12 +182,12 @@ header {
 
 @media (min-width: 1440px) {
   .formBox input {
-    margin: 2% 5%;
+    margin: 2.7% 5% 2%;
     font-size: 1rem;
   }
 }
 
-.formBox button {
+.formBox #submit {
   background-color: #38cc8c;
   color: white;
   border-radius: inherit;
@@ -168,9 +201,10 @@ header {
 }
 
 @media (min-width: 1440px) {
-  .formBox button {
+  .formBox #submit {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    margin-top: 3%;
   }
 }
 
