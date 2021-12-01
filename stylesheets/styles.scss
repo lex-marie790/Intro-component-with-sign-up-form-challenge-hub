@@ -168,6 +168,10 @@ header {
             box-shadow: 0 5px 3px -3px $buttonColor;
             font-weight: font-weight3;
 
+            &:focus {
+                cursor: pointer;
+            }
+
             @media (min-width: $layout-desktop) {
                 font-size: 1.2rem;
                 margin-bottom: 1rem;

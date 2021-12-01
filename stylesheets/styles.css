@@ -218,6 +218,10 @@ header {
   font-weight: font-weight3;
 }
 
+.formBox #submit:focus {
+  cursor: pointer;
+}
+
 @media (min-width: 1440px) {
   .formBox #submit {
     font-size: 1.2rem;
