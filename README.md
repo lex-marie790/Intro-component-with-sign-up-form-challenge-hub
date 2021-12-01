@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](../design/Completed-Desktop.jpg)
-![](../design/Completed-mobile.jpg)
+[](../design/Completed-Desktop.jpg)
+[](../design/Completed-mobile.jpg)
 
 
 ### Links
