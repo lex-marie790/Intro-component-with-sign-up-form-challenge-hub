@@ -25,9 +25,6 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-left: 0rem;
     margin-right: 10.8rem;
     margin-top: 7.5rem;
@@ -42,10 +39,20 @@ header {
 
 @media (min-width: 1440px) {
   .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left;
     padding-left: 9rem;
     padding-right: 4rem;
     margin-bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -63,6 +70,12 @@ header {
   }
 }
 
+@media (min-width: 1440px) {
+  .left p {
+    margin-top: 0;
+  }
+}
+
 .right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +84,11 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .promoBox {
@@ -102,8 +120,8 @@ header {
   }
 }
 
-.promoBox #button {
-  font-weight: font-weight3;
+.promoBox span {
+  font-weight: bold;
 }
 
 .formBox {
